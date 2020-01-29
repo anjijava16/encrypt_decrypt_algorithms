@@ -67,7 +67,27 @@ J2SE comes with a default provider named SunJCE.
 1.  MD5 – default size 64 bytes
 2.  SHA1 - default size 64 bytes
 
+# There are two general categories of key based algorithms:
+
+  # Symmetric encryption algorithms: 
+     Symmetric algorithms use the same key for encryption and decryption. These algorithms, can either operate in block mode (which works on fixed-size blocks of data) or stream mode (which works on bits or bytes of data). They are commonly used for applications like data encryption, file encryption and encrypting transmitted data in communication networks (like TLS, emails, instant messages, etc.). 
+ # Asymmetric (or public key) encryption algorithms: 
+  Unlike symmetric algorithms, which use the same key for both encryption and decryption operations, asymmetric algorithms use two separate keys for these two operations. These algorithms are used for computing digital signatures and key establishment protocols. 
+# To configure any basic encryption scheme securely, it's very important that all of these parameters (at the minimum) are configured correctly:
+
+  Choosing the correct algorithm
+  Choosing the right mode of operation
+  Choosing the right padding scheme
+  Choosing the right keys and their sizes
+  Correct IV initialization with cryptographically secure CSPRNG
+  It's very important to be vigilant about configuring all of these parameters securely. Even a tiny misconfiguration will leave an entire crypto-system open to attacks.
+
+# Note: 
+   To keep this discussion simple, I will discuss only algorithm-independent initializations of a Cipher. Unless you know what you are doing, let provider defaults do their job of configuring more algorithm-dependent configurations, like p and q values of the RSA algorithm, etc.
+
 ## Examples
+
+
 
 ### SecureRandom
 
