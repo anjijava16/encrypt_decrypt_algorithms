@@ -69,8 +69,8 @@ J2SE comes with a default provider named SunJCE.
 
 # There are two general categories of key based algorithms:
 
-  # Symmetric encryption algorithms: 
-     Symmetric algorithms use the same key for encryption and decryption. These algorithms, can either operate in block mode (which works on fixed-size blocks of data) or stream mode (which works on bits or bytes of data). They are commonly used for applications like data encryption, file encryption and encrypting transmitted data in communication networks (like TLS, emails, instant messages, etc.). 
+# Symmetric encryption algorithms: 
+   Symmetric algorithms use the same key for encryption and decryption. These algorithms, can either operate in block mode (which works on fixed-size blocks of data) or stream mode (which works on bits or bytes of data). They are commonly used for applications like data encryption, file encryption and encrypting transmitted data in communication networks (like TLS, emails, instant messages, etc.). 
  # Asymmetric (or public key) encryption algorithms: 
   Unlike symmetric algorithms, which use the same key for both encryption and decryption operations, asymmetric algorithms use two separate keys for these two operations. These algorithms are used for computing digital signatures and key establishment protocols. 
 # To configure any basic encryption scheme securely, it's very important that all of these parameters (at the minimum) are configured correctly:
